@@ -90,7 +90,10 @@ To enable Remote Desktop access for Domain Users on *Client-1*, log in as **mydo
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/ad5a310c-3ec9-4f69-9802-7c7c5faec083" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://github.com/user-attachments/assets/9d5d224c-dd75-42a6-9459-913000b87903" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 On DC-1, launch PowerShell ISE as an administrator and use a script to automatically generate multiple employee user accounts in the _EMPLOYEES Organizational Unit. Once the script runs, verify the new accounts in Active Directory Users and Computers (ADUC). Then, switch to Client-1 and attempt to log in using one of the newly created accounts to confirm proper domain authentication. 
@@ -98,7 +101,10 @@ On DC-1, launch PowerShell ISE as an administrator and use a script to automatic
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/b948aa62-373f-4035-a8a3-229b94573d0c" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://github.com/user-attachments/assets/659e7858-c497-4b3a-83a4-a42cf69a3336" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 After running the PowerShell script to create user accounts, open Active Directory Users and Computers (ADUC) on DC-1 to ensure all accounts are correctly listed under the _EMPLOYEES OU. Then, on Client-1, test logging in with several of the new accounts to verify that they are recognized by the domain. Confirm that each user can log in successfully and that appropriate access permissions are applied.
