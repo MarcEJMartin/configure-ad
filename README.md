@@ -46,7 +46,13 @@ To begin configuring your on-premises Active Directory infrastructure, log into 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/420a5df8-32d9-49f8-9b85-0b790f6cd2ca" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://github.com/user-attachments/assets/29ddecf9-1b06-45d2-8c1d-f56beff5d678" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://github.com/user-attachments/assets/9dad8d34-5aed-46e0-8a34-02624deb9fa2" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 In Active Directory Users and Computers (ADUC), creating Organizational Units (OUs) like _EMPLOYEES and _ADMINS helps organize user accounts based on their roles or access levels. Within the _ADMINS OU, you create a new user account called jane_admin and assign it a secure password. After creating the account, you add jane_admin to the “Domain Admins” security group, granting it administrative privileges across the domain.
@@ -54,7 +60,7 @@ In Active Directory Users and Computers (ADUC), creating Organizational Units (O
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/ce82cbd1-d032-4f9a-84ad-c654f899e9a4" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 After creating the jane_admin account and adding it to the Domain Admins group, log out of DC-1 and log back in using the domain credentials for jane_admin. This account will now have administrative privileges across the domain and should be used for managing domain resources and configurations. Using a dedicated domain admin account improves security and separates administrative tasks from regular user activity.
@@ -63,16 +69,19 @@ After creating the jane_admin account and adding it to the Domain Admins group, 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/664c55bd-4216-4b6a-99e2-04a40479dd34" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-To join Client-1 to the domain, first log into the VM as the local administrator and connect it to your domain (e.g., mydomain.com**) through the system settings. Once the computer restarts and successfully joins the domain, log into DC-1 and open **Active Directory Users and Computers (ADUC). In ADUC, create a new Organizational Unit called **\_CLIENTS** and move *Client-1* into it to organize and manage client machines more effectively.
+<img src="https://github.com/user-attachments/assets/10155ba5-95df-44c5-998e-45dba054b600" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+To join Client-1 to the domain, first log into the Client-1 VM as the local administrator and connect it to your domain (e.g., mydomain.com**) through the system settings. Once the computer restarts and successfully joins the domain, log into DC-1 and open **Active Directory Users and Computers (ADUC). In ADUC, create a new Organizational Unit called **\_CLIENTS** and move *Client-1* into it to organize and manage client machines more effectively.
 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/d55a74ae-d31c-4fed-933c-6a7ea06f7968" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 To enable Remote Desktop access for Domain Users on *Client-1*, log in as **mydomain.com\jane\_admin** and open the system properties. Navigate to the **Remote Desktop** settings and allow connections from users in the **Domain Users** group. This configuration permits standard domain users to access the machine remotely, which is useful for testing logins and supporting end users in a real-world environment.
